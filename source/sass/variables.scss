@@ -3,12 +3,14 @@
 
 // Default
 
-$color-basic-white: #ffffff;
-$color-basic-black: #000000;
-$color-button-main: #B9D4FD;
-$color-text-main: #28282F;
-$color-accent-main: #688AB1;
-$color-transparent: rgba(255, 255, 255, 0);
+$color-basic-white:                 #ffffff;
+$color-basic-black:                 #000000;
+$color-button-main:                 #bc7676;
+$color-accent-main:                 #688ab1;
+$color-accent-dark:                 #28282f;
+$color-accent-light:                #b9d4fd;
+$color-background:                  #d7d2d0;
+$color-transparent:                 rgba(2, 1, 1, 0);
 
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
@@ -16,7 +18,8 @@ $color-transparent: rgba(255, 255, 255, 0);
 // Gradient
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
-$gray-to-bottom: linear-gradient(to bottom, hsla(200, 100%, 98%, 0.92) 85%, rgba(247, 252, 255, 0.726) 100%);
+$gray-to-bottom:                    linear-gradient(to bottom, hsla(200, 100%, 98%, 0.92) 85%, rgba(247, 252, 255, 0.726) 100%);
+$blue-to-bottom:                    linear-gradient(to bottom, #688AB1 0%, rgba(104, 138, 177, 0.78) 73.07%, rgba(104, 138, 177, 0.3) 99.98%);
 
 // Typography
 // ---------------------------------

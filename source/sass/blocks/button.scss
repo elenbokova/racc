@@ -1,16 +1,18 @@
-.btn {
+.button {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 11px 15px;
+  padding: 25px 35px;
 
   font-family: $ff-main;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 400;
+  font-size: 25px;
+  line-height: 32px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 
   color: $color-basic-white;
-
   background-color: $color-button-main;
   border: none;
   cursor: pointer;

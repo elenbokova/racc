@@ -18,52 +18,67 @@
   <link rel="preload" href="fonts/montserrat-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-semibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body>
-  <header class="header container">
-    <div class="header__container header__container--nojs">
-      <div class="header__wrapper">
-        <a class="header__logo" href="#">
-          <img class="header__logo-image" src="img/logo-white.svg" width="138" height="61"
-            alt="Логотип компании «РУКЦ».">
-        </a>
-        <button class="header__nav-toggle header__nav-toggle--open" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+  <header class="header">
+    <div class="container">
+      <div class="header__container header__container--nojs">
+        <div class="header__wrapper">
+          <a class="header__logo" href="#">
+            <img class="header__logo-image" src="img/logo-white.svg" width="138" height="61"
+              alt="Логотип компании «РУКЦ».">
+          </a>
+          <button class="header__nav-toggle header__nav-toggle--open" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+        <nav class="header__nav header__nav--closed">
+          <ul class="header__nav-list list-reset site-list">
+            <li class="header__nav-list-item header__nav-list-item--active">
+              <a class="header__nav-list-link" href="#">главная</a>
+            </li>
+            <li class="header__nav-list-item">
+              <a class="header__nav-list-link" href="#">о нас</a>
+            </li>
+            <li class="header__nav-list-item">
+              <a class="header__nav-list-link" href="#">услуги</a>
+            </li>
+            <li class="header__nav-list-item">
+              <a class="header__nav-list-link" href="#">контакты</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="header__nav header__nav--closed">
-        <ul class="header__nav-list list-reset site-list">
-          <li class="header__nav-list-item header__nav-list-item--active">
-            <a class="header__nav-list-link title" href="#">главная</a>
-          </li>
-          <li class="header__nav-list-item">
-            <a class="header__nav-list-link title" href="#">о нас</a>
-          </li>
-          <li class="header__nav-list-item">
-            <a class="header__nav-list-link title" href="#">услуги</a>
-          </li>
-          <li class="header__nav-list-item">
-            <a class="header__nav-list-link title" href="form.html">контакты</a>
-          </li>
-        </ul>
-      </nav>
     </div>
   </header>
 
-  <main class="index-page container">
+  <main class="main">
     <section class="intro">
-      <h1 class="intro__title">Региональный учетно-консалтинговый центр</h1>
-      <p class="intro__text">бухгалтерский учет, оценка имущества, налоговое консультирование в Саратове и Саратовской
-        области</p>
-      <button class="button button__intro" type="button"></button>
+      <div class="container">
+        <div class="intro__content">
+          <h1 class="intro__title">Региональный<br>учетно-консалтинговый центр</h1>
+          <p class="intro__text">Профессиональные услуги ведения бухгалтерского учета, оценка имущества в Саратове и Саратовской области.</p>
+          <button class="button intro__button" type="button">
+            <span>
+            Подробнее
+            <svg width="50" height="25">
+              <use xlink:href="img/sprite.svg#right-arrow"></use>
+            </svg>
+            </span>
+          </button>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="footer__container container">
       <a class="footer__logo" href="#">
-        <img class="logo" src="img/logo-white.svg" width="128" height="24" alt="Компания РУКЦ.">
+        <img class="logo" src="img/logo-white.svg" width="100" height="auto" alt="Компания РУКЦ.">
       </a>
     </div>
   </footer>

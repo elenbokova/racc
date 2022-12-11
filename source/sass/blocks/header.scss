@@ -1,0 +1,31 @@
+.header {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 5;
+    background-color: $color-accent-main;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav-toggle {
+    display: none;
+}
+
+.header__nav-list {
+    display: flex;
+    gap: 35px;
+}
+
+.header__nav-list-link {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    color: $color-basic-white;
+    text-transform: uppercase;
+}
