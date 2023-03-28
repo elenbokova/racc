@@ -1,0 +1,23 @@
+.services {
+  min-height: 100vh;
+  padding: 8vh 0;
+}
+
+.services__title {
+  margin: 0;
+  margin-bottom: 5vh;
+  font-family: $ff-main;
+  font-weight: 800;
+  font-size: 38px;
+  color: $color-basic-dark;
+  line-height: 1em;
+
+  @include vp-1279 {
+    font-size: 3.5vw;
+    // margin-bottom: 5vw;
+  }
+}
+
+.services__item-title {
+  margin: 0;
+}

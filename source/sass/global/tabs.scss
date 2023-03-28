@@ -1,0 +1,49 @@
+.tabs__controls {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: stretch;
+  gap: 5px;
+}
+
+.tabs__control-button {
+  height: 100%;
+  padding: 15px 10px;
+  color: $color-basic-white;
+  background-color: $color-accent-gray;
+  border: 1px solid $color-basic-gray;
+  border-radius: 0 15px 0 0;
+  box-shadow: 3px 0 3px 0 rgba(0, 0, 0, .1);
+  cursor: pointer;
+  transition: all $trans-default;
+
+  @include hover-focus {
+    transform: translateY(-5px);
+  }
+}
+
+.tabs__control-button.is-active {
+  font-weight: 600;
+    background-color: $color-accent-bordo;
+    color: $color-basic-white;
+    border-color: $color-accent-bordo;
+    pointer-events: none;
+    box-shadow: 0 10px 0 0 $color-accent-bordo;
+}
+
+.tabs__item {
+  display: none;
+  padding: 50px;
+  background-color: $color-basic-white;
+}
+
+.tabs__item.is-active {
+  display: block;
+}
+
+.tabs__content {
+  margin: 0;
+  padding: 50px;
+  background-color: $color-accent-yellow;
+  box-shadow: 3px 0 3px 0 rgba(0, 0, 0, .1);
+}

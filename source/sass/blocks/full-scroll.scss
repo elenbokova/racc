@@ -1,0 +1,11 @@
+.full-scroll {
+  height: 100%;
+  overflow-y: auto;
+  scroll-snap-type: y proximity;
+  scroll-padding: 100px 0 0 0;
+}
+
+.full-scroll__page {
+  min-height: 100%;
+  scroll-snap-align: start;
+}

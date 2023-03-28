@@ -1,0 +1,40 @@
+.quotes {
+  padding: 20px;
+  background-color: $color-basic-white;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,.1);
+}
+
+.quotes svg {
+  position: absolute;
+  left: 0;
+  top: -20px;
+}
+
+blockquote {
+  margin: 30px 0 30px;
+}
+
+.quotes__item-text,
+.quotes__item-author {
+  margin: 0;
+}
+
+.quotes__item-text {
+  margin-left: 100px;
+  font-weight: 600;
+  font-size: 20px;
+  color: $color-basic-dark;
+
+  @include vp-1279 {
+    font-size: 1.9vw;
+    line-height: 1em;
+  }
+}
+
+.quotes__item-author {
+  text-align: end;
+  @include vp-1279 {
+    font-size: 1.4vw;
+    line-height: 1em;
+  }
+}

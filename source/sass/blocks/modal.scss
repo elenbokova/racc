@@ -11,7 +11,7 @@
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
-  background-color: rgba($color-basic-black, 0.8);
+  background-color: rgba($color-basic-black, 0.7);
   transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
@@ -62,7 +62,7 @@
     width: 600px;
     padding: 40px;
 
-    background-color: $color-basic-white;
+    background-color: $color-accent-light-yellow;
 
     @include vp-767 {
       width: 100%;
@@ -70,7 +70,7 @@
     }
   }
 
-  &__close-btn {
+  &__close-button {
     position: absolute;
     top: 22px;
     right: 22px;
@@ -116,4 +116,92 @@
 
     pointer-events: auto;
   }
+}
+
+.modal__title {
+  margin: 0;
+  margin-bottom: 2vh;
+  font-family: $ff-custom;
+  font-weight: 700;
+  font-size: 30px;
+  color: $color-basic-dark;
+  line-height: 1em;
+
+  @include vp-1279 {
+    font-size: 2.5vw;
+  }
+}
+
+.modal__description {
+  font-size: 20px;
+  color: $color-basic-dark;
+
+  @include vp-1279 {
+    font-size: 1.6vw;
+  }
+}
+
+.modal__form {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+}
+
+.modal__input {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  color: $color-basic-dark;
+
+  &::placeholder {
+    color: $color-basic-gray;
+  }
+}
+
+.modal__checkbox-label {
+  position: relative;
+  width: fit-content;
+  padding-left: 35px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 45%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: $color-basic-white;
+    border: 1px solid $color-basic-white;
+  }
+}
+
+.modal__checkbox-input {
+  bottom: 20%;
+
+  @include focus {
+    +.modal__checkbox-label {
+      outline: 2px solid $color-accent-bordo;
+      outline-offset: 2px;
+    }
+  }
+}
+
+.modal__checkbox-input[type="checkbox"]:checked+.modal__checkbox-label {
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 3px);
+    left: 3px;
+    transform: translateY(-50%) rotate(-50deg);
+    width: 15px;
+    height: 9px;
+    border-bottom: 2px solid $color-basic-dark;
+    border-left: 2px solid $color-basic-dark;
+  }
+}
+
+.modal__button {
+  border-radius: 3px;
 }

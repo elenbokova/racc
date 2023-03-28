@@ -1,0 +1,104 @@
+.contacts {
+  padding: 8vh 0;
+  background-color: $color-background-pink;
+}
+
+.contacts__content {
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  gap: 25px
+}
+
+.contacts__title {
+  margin: 0;
+  margin-bottom: 5vh;
+  font-family: $ff-main;
+  font-weight: 800;
+  font-size: 38px;
+  color: $color-basic-dark;
+  line-height: 1em;
+
+  @include vp-1279 {
+    font-size: 3.5vw;
+  }
+
+  &--medium {
+    margin-bottom: 10px;
+    font-size: 20px;
+
+    @include vp-1279 {
+      font-size: 1.6vw;
+    }
+  }
+
+  &--small {
+    margin-bottom: 5px;
+    font-size: 18px;
+    line-height: 1.8em;
+    font-weight: 700;
+
+    @include vp-1279 {
+      font-size: 1.5vw;
+    }
+  }
+}
+
+.contacts__list {
+  margin-bottom: 20px;
+}
+
+.contacts__item {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 2em;
+  color: $color-basic-dark;
+
+  @include vp-1279 {
+    font-size: 1.5vw;
+  }
+
+  svg {
+    margin-right: 10px;
+  }
+}
+
+.contacts__address {
+  font-style: normal;
+}
+
+.contacts__details {
+  margin-bottom: 15px;
+}
+
+summary {
+  width: max-content;
+  cursor: pointer;
+}
+
+.contacts__details-list {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1.3em;
+
+  @include vp-1279 {
+    font-size: 1.4vw;
+    color: $color-basic-dark;
+  }
+
+  div {
+    display: flex;
+    gap: 10px
+  }
+
+  dt {
+    color: $color-basic-gray;
+  }
+
+  dd {
+    margin: 0;
+  }
+}

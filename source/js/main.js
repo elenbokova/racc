@@ -1,5 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import {initSingleSlider} from './modules/single-slider';
+import {initTabs} from './modules/tab';
+import {initPhoneCheck} from './utils/phone-check';
 
 // ---------------------------------
 
@@ -17,6 +20,9 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
+    initSingleSlider();
+    initTabs();
+    initPhoneCheck();
   });
 });
 

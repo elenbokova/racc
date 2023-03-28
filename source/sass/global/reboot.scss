@@ -33,7 +33,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: $color-background;
+  word-wrap: break-word;
 }
 
 a {
@@ -70,8 +70,13 @@ textarea {
   border-radius: 0;
 
   @include focus {
-    outline: 1px solid $color-basic-black;
+    outline: 2px solid $color-accent-bordo;
     outline-offset: 2px;
+  }
+
+  @include hover {
+    outline: 1px solid $color-basic-black;
+    outline-offset: 1px;
   }
 
   &::placeholder {
