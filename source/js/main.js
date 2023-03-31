@@ -1,4 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
+import {Burger} from './modules/burger';
+import {StickyHeader} from './modules/sticky-header';
+import './modules/locomotive-scroll';
+import {initLocomotiveScroll} from './modules/init-locomotive-scroll';
 import {initModals} from './modules/modals/init-modals';
 import {initSingleSlider} from './modules/single-slider';
 import {initTabs} from './modules/tab';
@@ -7,6 +11,7 @@ import {initPhoneCheck} from './utils/phone-check';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
+  initLocomotiveScroll();
 
   // Utils
   // ---------------------------------
@@ -19,6 +24,12 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
+    const burger = new Burger();
+    burger.init();
+
+    const stickyHeader = new StickyHeader();
+    stickyHeader.init();
+
     initModals();
     initSingleSlider();
     initTabs();
