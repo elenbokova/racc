@@ -12,9 +12,12 @@ $color-button-accent:               #a61c1c;
 $color-accent-bordo:                #b00000;
 $color-accent-yellow:               #ffe87a;
 $color-accent-light-yellow:         #ffe695;
+$color-accent-dark-yellow:          #f8c13d;
 $color-accent-gray:                 #3d3d3c;
+$color-light-gray:                  #fffdf6;
 $color-background:                  #dbdbdb;
 $color-background-pink:             #fdf9fa;
+$color-transparent-gray:            transparentize($color-background, 0.7);
 
 $color-transparent:                 rgba(2, 1, 1, 0);
 

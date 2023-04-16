@@ -1,17 +1,16 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Burger} from './modules/burger';
 import {StickyHeader} from './modules/sticky-header';
-import './modules/locomotive-scroll';
-import {initLocomotiveScroll} from './modules/init-locomotive-scroll';
+import {NavigationChanger} from './utils/navigation-changer';
 import {initModals} from './modules/modals/init-modals';
 import {initSingleSlider} from './modules/single-slider';
-import {initTabs} from './modules/tab';
 import {initPhoneCheck} from './utils/phone-check';
+import {initAccordions} from './modules/init-accordion';
+import {initUpButton} from './modules/scroll-to-top';
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
-  initLocomotiveScroll();
 
   // Utils
   // ---------------------------------
@@ -26,13 +25,17 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     const burger = new Burger();
     burger.init();
+    initAccordions();
 
     const stickyHeader = new StickyHeader();
     stickyHeader.init();
 
+    const navigationChanger = new NavigationChanger();
+    navigationChanger.init();
+
+    initUpButton();
     initModals();
     initSingleSlider();
-    initTabs();
     initPhoneCheck();
   });
 });

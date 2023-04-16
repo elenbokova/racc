@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru" data-scroll-direction="vertical">
+<html lang="ru" data-scroll-direction="vertical">
 
 <head>
   <meta charset="UTF-8" />
@@ -26,427 +26,480 @@
 </head>
 
 <body>
-  <header class="header header--sticky" data-header="sticky">
-    <div class="container">
-      <div class="header__container header__container--nojs">
-        <a class="header__logo" href="#">
-          <img class="header__logo-image" src="img/logo-black.svg" width="100" height="44"
-            alt="Логотип компании «РУКЦ».">
-        </a>
-        <nav class="header__nav">
-          <ul class="header__nav-list list-reset">
-            <li class="header__nav-list-item header__nav-list-item--active">
-              <a class="header__nav-list-link header__nav-list-link--current" href="#intro">Главная</a>
-            </li>
-            <li class="header__nav-list-item">
-              <a class="header__nav-list-link" href="#about">О нас</a>
-            </li>
-            <li class="header__nav-list-item">
-              <a class="header__nav-list-link" href="#services">Услуги</a>
-            </li>
-            <li class="header__nav-list-item">
-              <a class="header__nav-list-link" href="#contacts">Контакты</a>
-            </li>
-          </ul>
-          <a class="header__nav-phone" href="tel:+78452980316">
-            <svg width="17" height="17">
-              <use xlink:href="img/sprite.svg#icon-phone"></use>
-            </svg>
-            +7 (8452) 98-03-16</a>
-        </nav>
-        <button class="header__burger" type="button" aria-label="Переключатель отображения меню" aria-pressed="false"
-          data-burger="">
-          <span class="header__burger-text">
-            Меню
-          </span>
-          <svg class="header__burger-icon" width="20" height="20" aria-hidden="true">
-            <use xlink:href="#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </header>
-  <div data-scroll-container="">
-    <div data-scroll-section="" data-scroll-section-id="section0">
-      <main class="main">
-        <section class="intro" id="intro" data-id="intro">
-          <div class="container">
-            <div class="intro__main">
-              <div class="intro__content">
-                <h1 class="intro__title">Региональный<br>учетно-консалтинговый<br>центр</h1>
-                <p class="intro__text">Профессиональные услуги ведения бухгалтерского учета, оценка имущества в
-                  Саратове
-                  и
-                  Саратовской области.</p>
-                <div class="intro__buttons">
-                  <a class="button intro__button" href="#about">Подробнее</a>
-                  <button class="button button--accent intro__button" type="button" data-open-modal="feedback">Заказать
-                    звонок</button>
-                </div>
-              </div>
-              <div class="intro__img-wrapper">
-                <picture>
-                  <source srcset="img/intro.webp 1x, img/intro@2x.webp 2x" type="image/webp">
-                  <img src="img/intro.jpg" srcset="img/intro@2x.jpg 2x" alt="Специалист на рабочем месте" width="533"
-                    height="450">
-                </picture>
-              </div>
-            </div>
-            <aside class="intro__quotes quotes" data-id="quotes">
-              <svg width="120" height="120">
-                <use xlink:href="img/sprite.svg#icon-quotes"></use>
+  <div class="wrapper">
+    <header class="header header--sticky" data-header="sticky">
+      <div class="container">
+        <div class="header__container header__container--nojs">
+          <a class="header__logo" href="#">
+            <img class="header__logo-image" src="img/logo-black.svg" width="100" height="44"
+              alt="Логотип компании «РУКЦ».">
+          </a>
+          <nav class="header__nav">
+            <ul class="header__nav-list list-reset">
+              <li class="header__nav-list-item">
+                <a class="header__nav-list-link is-active" href="#intro" data-navigation-link="">Главная</a>
+              </li>
+              <li class="header__nav-list-item">
+                <a class="header__nav-list-link" href="#about" data-navigation-link="">О нас</a>
+              </li>
+              <li class="header__nav-list-item">
+                <a class="header__nav-list-link" href="#services" data-navigation-link="">Услуги</a>
+              </li>
+              <li class="header__nav-list-item">
+                <a class="header__nav-list-link" href="#contacts" data-navigation-link="">Контакты</a>
+              </li>
+            </ul>
+            <a class="header__nav-phone" href="tel:+78452980316">
+              <svg width="17" height="17">
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg>
-              <div class="swiper quotes__slider">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide quotes__item">
-                    <blockquote>
-                      <p class="quotes__item-text">Самое непостижимое в&nbsp;этом мире&nbsp;&mdash; налоговая шкала.
-                      </p>
-                    </blockquote>
-                    <p class="quotes__item-author">Альберт Эйнштейн</p>
-                  </div>
-                  <div class="swiper-slide quotes__item">
-                    <blockquote>
-                      <p class="quotes__item-text">Ты&nbsp;можешь и&nbsp;не&nbsp;заметить, что у&nbsp;тебя все идет
-                        хорошо. Но&nbsp;налоговая служба
-                        напомнит.</p>
-                    </blockquote>
-                    <p class="quotes__item-author">Пьер Данинос</p>
-                  </div>
-                  <div class="swiper-slide quotes__item">
-                    <blockquote>
-                      <p class="quotes__item-text">Патриотизм заканчивается, когда речь заходит о налогах.</p>
-                    </blockquote>
-                    <p class="quotes__item-author">Джордж Оруэлл</p>
-                  </div>
-                  <div class="swiper-slide quotes__item">
-                    <blockquote>
-                      <p class="quotes__item-text">Один нечестный бухгалтер страшнее армии неприятеля.</p>
-                    </blockquote>
-                    <p class="quotes__item-author">Наполеон Бонапарт</p>
-                  </div>
-                  <div class="swiper-slide quotes__item">
-                    <blockquote>
-                      <p class="quotes__item-text">В этом мире неизбежны только смерть и налоги.</p>
-                    </blockquote>
-                    <p class="quotes__item-author">Бенджамин Франклин</p>
-                  </div>
-                  <div class="swiper-slide quotes__item">
-                    <blockquote>
-                      <p class="quotes__item-text">У настоящего бухгалтера не сойтись могут только брюки.</p>
-                    </blockquote>
-                    <p class="quotes__item-author">Иосиф Юдилевич</p>
-                  </div>
-                  <div class="swiper-slide quotes__item">
-                    <blockquote>
-                      <p class="quotes__item-text">Дату возникновения мира способны установить лишь бухгалтеры.</p>
-                    </blockquote>
-                    <p class="quotes__item-author">Станислав Ежи Лец</p>
-                  </div>
-                  <div class="swiper-slide quotes__item">
-                    <blockquote>
-                      <p class="quotes__item-text">Всякая экономия в конечном счете сводится к экономии времени.</p>
-                    </blockquote>
-                    <p class="quotes__item-author">Карл Маркс</p>
+              +7 (8452) 98-03-16</a>
+          </nav>
+          <button class="header__burger" type="button" aria-label="Переключатель отображения меню" aria-pressed="false"
+            data-burger="">
+            <svg class="header__burger-icon" width="32" height="32" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#icon-burger"></use>
+            </svg>
+            <svg class="header__burger-close" width="20" height="20" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div data-scroll-container="">
+      <div data-scroll-section="" data-scroll-section-id="section0">
+        <main class="main">
+          <section class="intro" id="intro" data-id="intro">
+            <div class="container">
+              <div class="intro__main">
+                <div class="intro__content">
+                  <h1 class="intro__title">Региональный<br>учетно-консалтинговый<br>центр</h1>
+                  <p class="intro__text">Профессиональные услуги ведения бухгалтерского учета, оценка имущества в
+                    Саратове
+                    и
+                    Саратовской области.</p>
+                  <div class="intro__buttons">
+                    <a class="button intro__button" href="#about">Подробнее</a>
+                    <button class="button button--accent intro__button" type="button"
+                      data-open-modal="feedback">Заказать
+                      звонок</button>
                   </div>
                 </div>
+                <div class="intro__img-wrapper">
+                  <picture>
+                    <source srcset="img/intro.webp 1x, img/intro@2x.webp 2x" type="image/webp">
+                    <img src="img/intro.jpg" srcset="img/intro@2x.jpg 2x" alt="Специалист на рабочем месте" width="533"
+                      height="450">
+                  </picture>
+                </div>
               </div>
-            </aside>
-          </div>
-        </section>
+              <aside class="intro__quotes quotes" data-id="quotes">
+                <svg width="120" height="120">
+                  <use xlink:href="img/sprite.svg#icon-quotes"></use>
+                </svg>
+                <div class="swiper quotes__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide quotes__item">
+                      <blockquote>
+                        <p class="quotes__item-text">Самое непостижимое в&nbsp;этом мире&nbsp;&mdash; налоговая шкала.
+                        </p>
+                      </blockquote>
+                      <p class="quotes__item-author">Альберт Эйнштейн</p>
+                    </div>
+                    <div class="swiper-slide quotes__item">
+                      <blockquote>
+                        <p class="quotes__item-text">Ты&nbsp;можешь и&nbsp;не&nbsp;заметить, что у&nbsp;тебя все идет
+                          хорошо. Но&nbsp;налоговая служба
+                          напомнит.</p>
+                      </blockquote>
+                      <p class="quotes__item-author">Пьер Данинос</p>
+                    </div>
+                    <div class="swiper-slide quotes__item">
+                      <blockquote>
+                        <p class="quotes__item-text">Патриотизм заканчивается, когда речь заходит о налогах.</p>
+                      </blockquote>
+                      <p class="quotes__item-author">Джордж Оруэлл</p>
+                    </div>
+                    <div class="swiper-slide quotes__item">
+                      <blockquote>
+                        <p class="quotes__item-text">Один нечестный бухгалтер страшнее армии неприятеля.</p>
+                      </blockquote>
+                      <p class="quotes__item-author">Наполеон Бонапарт</p>
+                    </div>
+                    <div class="swiper-slide quotes__item">
+                      <blockquote>
+                        <p class="quotes__item-text">В этом мире неизбежны только смерть и налоги.</p>
+                      </blockquote>
+                      <p class="quotes__item-author">Бенджамин Франклин</p>
+                    </div>
+                    <div class="swiper-slide quotes__item">
+                      <blockquote>
+                        <p class="quotes__item-text">У настоящего бухгалтера не сойтись могут только брюки.</p>
+                      </blockquote>
+                      <p class="quotes__item-author">Иосиф Юдилевич</p>
+                    </div>
+                    <div class="swiper-slide quotes__item">
+                      <blockquote>
+                        <p class="quotes__item-text">Дату возникновения мира способны установить лишь бухгалтеры.</p>
+                      </blockquote>
+                      <p class="quotes__item-author">Станислав Ежи Лец</p>
+                    </div>
+                    <div class="swiper-slide quotes__item">
+                      <blockquote>
+                        <p class="quotes__item-text">Всякая экономия в конечном счете сводится к экономии времени.</p>
+                      </blockquote>
+                      <p class="quotes__item-author">Карл Маркс</p>
+                    </div>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </section>
 
-        <section class="aboute" id="about">
-          <div class="container">
-            <h2 class="about__title">
-              Профессиональные услуги ведения бухгалтерского учета, оценка имущества по&nbsp;самым оптимальным ценам.
-            </h2>
-            <div class="about__wrapper">
-              <div class="about__content">
-                <picture>
-                  <source srcset="img/about1.webp 1x, img/about1@2x.webp 2x" type="image/webp">
-                  <img src="img/about1.png" srcset="img/about1@2x.png" alt="Иллюстрация мужчина за столом." width="326"
-                    height="390" loading="lazy">
-                </picture>
-                <p class="about__text">
-                  <b>ООО &laquo;Региональный учетно-консалтинговый центр&raquo;</b> зарекомендовало себя на&nbsp;рынке
-                  бухгалтерских услуг и&nbsp;оценки как
-                  команда высококвалифицированных специалистов с&nbsp;многолетним опытом работы. Обратившись
-                  к&nbsp;нам,
-                  Вы&nbsp;сможете уделять все свое время развитию бизнеса, не&nbsp;отвлекаясь на&nbsp;решение
-                  непрофильных
-                  задач, связанных с&nbsp;бухгалтерским делом.
-                </p>
-              </div>
-              <div class="about__content">
-                <p class="about__text">
-                  Мы&nbsp;<b>гарантируем качество</b> всех предоставляемых нами услуг: постановка, ведение
-                  и&nbsp;восстановление
-                  бухгалтерского и налогового учета, сопровождение проверок налоговых органов, бухгалтерский
-                  и&nbsp;налоговый консалтинг,
-                  а&nbsp;также оценка всех видов имущества.
-                </p>
-                <picture>
-                  <source srcset="img/about2.webp 1x, img/about2@2x.webp 2x" type="image/webp">
-                  <img src="img/about2.png" srcset="img/about2@2x.png" alt="Иллюстрация позитивный бухгалтер."
-                    width="308" height="390" loading="lazy">
-                </picture>
+          <section class="about" id="about">
+            <div class="container">
+              <h2 class="about__title">
+                Профессиональные услуги ведения бухгалтерского учета, оценка имущества по&nbsp;самым оптимальным ценам.
+              </h2>
+              <div class="about__wrapper">
+                <div class="about__content">
+                  <picture>
+                    <source srcset="img/about1.webp 1x, img/about1@2x.webp 2x" type="image/webp">
+                    <img class="about__picture" src="img/about1.png" srcset="img/about1@2x.png" alt="Иллюстрация мужчина за столом."
+                      width="326" height="390" loading="lazy">
+                  </picture>
+                  <p class="about__text">
+                    <b>ООО &laquo;Региональный учетно-консалтинговый центр&raquo;</b> зарекомендовало себя на&nbsp;рынке
+                    бухгалтерских услуг и&nbsp;оценки как
+                    команда высококвалифицированных специалистов с&nbsp;многолетним опытом работы. Обратившись
+                    к&nbsp;нам,
+                    Вы&nbsp;сможете уделять все свое время развитию бизнеса, не&nbsp;отвлекаясь на&nbsp;решение
+                    непрофильных
+                    задач, связанных с&nbsp;бухгалтерским делом.
+                  </p>
+                </div>
+                <div class="about__content">
+                  <p class="about__text">
+                    Мы&nbsp;<b>гарантируем качество</b> всех предоставляемых нами услуг: постановка, ведение
+                    и&nbsp;восстановление
+                    бухгалтерского и налогового учета, сопровождение проверок налоговых органов, бухгалтерский
+                    и&nbsp;налоговый консалтинг,
+                    а&nbsp;также оценка всех видов имущества.
+                  </p>
+                  <picture>
+                    <source srcset="img/about2.webp 1x, img/about2@2x.webp 2x" type="image/webp">
+                    <img class="about__picture" src="img/about2.png" srcset="img/about2@2x.png" alt="Иллюстрация позитивный бухгалтер."
+                      width="308" height="390" loading="lazy">
+                  </picture>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+            <picture>
+              <source srcset="img/about3.webp 1x, img/about3@2x.webp 2x" type="image/webp">
+                    <img class="about__picture-small" src="img/about3.png" srcset="img/about3@2x.png" alt="Иллюстрация палец вверх."
+                      width="102" height="102" loading="lazy">
+            </picture>
+          </section>
 
-        <section class="services" id="services">
-          <div class="container">
-            <h2 class="services__title">Чем мы можем помочь Вашему бизнесу</h2>
-            <div class="tabs">
-              <ul class="tabs__controls services__button-list list-reset">
-                <li class="tabs__control services__item">
-                  <button class="tabs__control-button is-active" type="button" data-tabs-target="1">Бух.учет</button>
-                </li>
-                <li class="tabs__control services__button-item">
-                  <button class="tabs__control-button" type="button" data-tabs-target="2">Оценка имущества</button>
-                </li>
-                <li class="tabs__control services__button-item">
-                  <button class="tabs__control-button" type="button" data-tabs-target="3">Восстановление
-                    бух.учета</button>
-                </li>
-                <li class="tabs__control services__button-item">
-                  <button class="tabs__control-button" type="button" data-tabs-target="4">Консультирование</button>
-                </li>
-                <li class="tabs__control services__button-item">
-                  <button class="tabs__control-button" type="button" data-tabs-target="5">Сопровождение
-                    проверок</button>
-                </li>
-              </ul>
-              <ul class="tabs__content services__list list-reset">
-                <li class="tabs__item tabs__item services__item is-active" data-tabs-target="1">
-                  <h3 class="services__item-title">Ведение бухгалтерского учета</h3>
-                  <p>
-                    Подобрать квалифицированного главного бухгалтера&nbsp;&mdash; очень непростая задача для
-                    руководителя.
-                    Однако
-                    осознание этого факта, зачастую, приходит слишком поздно, при наличии реальных потерь, например в
-                    результате существенных доначислений налогов с&nbsp;пенями и&nbsp;штрафами, в&nbsp;результате
-                    обоснованных претензий со стороны налоговых органов.
-                  </p>
-                  <p>
-                    Но&nbsp;даже наличие в&nbsp;штате квалифицированной бухгалтерии не&nbsp;избавляет руководителей,
-                    собственников
-                    предприятий от&nbsp;головной боли, так как бухгалтер имеет право на&nbsp;очередной оплачиваемый
-                    отпуск,
-                    может
-                    заболеть или уйти в&nbsp;декрет. В&nbsp;случае долговременного вынужденного отсутствия сотрудника
-                    бухгалтерии, ему
-                    необходимо искать замену, а&nbsp;в&nbsp;случае краткосрочного отсутствия нужно быть просто готовым
-                    к&nbsp;возможным
-                    потерям, принимая это как данность.
-                  </p>
-                  <p>
-                    Именно поэтому в&nbsp;развитых странах мира функции ведения бухгалтерского учета передают
-                    сторонним
-                    юридическим лицам. В&nbsp;России бухгалтерский аутсорсинг заслуженно стремительно набирает
-                    популярность.
-                    Мы&nbsp;оказываем услуги по&nbsp;качественному ведению бухгалтерского учета как всех, так
-                    и&nbsp;отдельных его участков. По&nbsp;всем правилам и&nbsp;стандартам, своевременно подготовим
-                    бухгалтерскую
-                    и&nbsp;налоговую отчетность, возложив на
-                    себя все риски и&nbsp;ответственность за&nbsp;ее&nbsp;подготовку и&nbsp;представление.
-                  </p>
-                </li>
-                <li class="tabs__item services__item" data-tabs-target="2">
-                  <h3 class="services__item-title">Оценка имущества</h3>
-                  <p>Независимую оценку привлекают в&nbsp;случаях, когда необходимо получить достоверную информацию
-                    о&nbsp;стоимости имущества на&nbsp;открытом конкурентном рынке. Отчет оценщика может понадобится
-                    для
-                    эффективного разрешения различных имущественных споров, например,
-                    при разделе общей собственности при бракоразводных процессах, неоднозначности вопросов
-                    по&nbsp;ипотеке,
-                    для определения суммы ущерба или компенсации при изъятии имущества в&nbsp;государственных
-                    интересах.
-                    Также оценка зачастую необходима при купле-продаже имущества, предоставления в&nbsp;качестве
-                    залогового
-                    обязательства при получении кредита, при внесении имущества в&nbsp;уставный капитал хозяйствующего
-                    субъекта и во&nbsp;многих других ситуациях.</p>
-                  <p>
-                    Оценка имущества или имущественных комплексов является одним из&nbsp;приоритеных направлений
-                    деятельности нашей компании. Наши специалисты имеют огромный опыт и&nbsp;знания в
-                    сфере оценочной деятельности, что дает нам возможность своевременно и&nbsp;качественно решать даже
-                    самые
-                    сложные задачи, связанные с&nbsp;оценкой. Мы&nbsp;работаем с&nbsp;различными
-                    клиентами&nbsp;&mdash;
-                    от&nbsp;крупных государственных организаций до&nbsp;небольших коммерческих компаний
-                    и&nbsp;физических
-                    лиц. Нас отличает стремление предложить оптимальное решение для любой поставленной задачи.
-                  </p>
-                </li>
-                <li class="tabs__item services__item" data-tabs-target="3">
-                  <h3 class="services__item-title">Восстановление бухгалтерского учета</h3>
-                  <p>Восстановить бухгалтерский учет может понадобиться в&nbsp;случаях, например, некомпетентности
-                    главного
-                    бухгалтера, отсутствия регистров бухгалтерского учета на&nbsp;протяжении нескольких периодов,
-                    недостоверности
-                    первичных данных, неправильного ведения налогового и&nbsp;бухгалтерского учета, утраты отчетности,
-                    первичных
-                    данных и&nbsp;бухгалтерских регистров.</p>
-                  <p>Зачастую, собственными силами организации с&nbsp;непростой задачей восстановления бухгалтерского
-                    и
-                    налогового учета не&nbsp;справиться. Самый оптимальный выход&nbsp;&mdash; обратиться
-                    к&nbsp;профессионалам, которые имеют
-                    огромный опыт в&nbsp;данном виде деятельности. Наши специалисты готовы в&nbsp;кратчайшие сроки
-                    оказать
-                    квалифицированную помощь в&nbsp;решении данной задачи.</p>
-                </li>
-                <li class="tabs__item services__item" data-tabs-target="4">
-                  <h3 class="services__item-title">Бухгалтерское и налоговое консультирование</h3>
-                  <p>В&nbsp;связи с&nbsp;дефицитом времени и&nbsp;финансовых ресурсов у&nbsp;руководителей компаний
-                    не&nbsp;всегда находится
-                    возможность организовать своему работнику качественное обучение, которое необходимо для адаптации
-                    его
-                    академических знаний к&nbsp;определённой области бизнеса. А&nbsp;для качественной работы это
-                    необходимо.
-                    Особенно
-                    не&nbsp;терпит неточностей финансовая сфера.
-                  </p>
-                  <p>Наши консультации&nbsp;&mdash; это прежде всего помощь в&nbsp;сборе, фиксации
-                    и&nbsp;систематизации
-                    необходимой информации;
-                    ознакомление клиента с&nbsp;наиболее эффективными методами анализа сложившейся финансовой
-                    ситуации;
-                    передача
-                    необходимых полезных знаний.</p>
-                  <p>Консультации осуществляются как на&nbsp;разовой основе, так и&nbsp;на&nbsp;основании договора
-                    на&nbsp;абонентское
-                    консультационное обслуживание. При этом у&nbsp;клиента имеется возможность оперативно получать,
-                    без
-                    ограничения количества запросов, устные или письменные консультации. Мы&nbsp;проводим консультации
-                    любым удобным для наших клиентов способом. В&nbsp;настоящее время заслуженной популярностью
-                    пользуются
-                    консультационные услуги онлайн, что позволяет нашим клиентам получать своевременные и&nbsp;полные
-                    ответы
-                    на&nbsp;интересующие вопросы.</p>
-                </li>
-                <li class="tabs__item services__item" data-tabs-target="5">
-                  <h3 class="services__item-title">Сопровождение налоговых проверок</h3>
-                  <p>
-                    Во&nbsp;взаимоотношениях с&nbsp;налоговыми органами требуется занимать четкую и&nbsp;взвешенную
-                    позицию,
-                    основанную на
-                    неопровержимых доказательствах. Многолетний опыт наших сотрудников гарантирует положительный
-                    результат
-                    при защите интересов наших клиентов на&nbsp;всех стадиях обжалования актов и&nbsp;решений
-                    налоговых
-                    органов.
-                  </p>
-                  <p>Сопровождение налоговых проверок включает в себя:</p>
-                  <ul class="list-reset">
-                    <li>сопровождение в ходе налоговой проверки: определение правомерности запросов и требований
-                      налогового
-                      органа, подготовка ответов и оценка предоставляемых документов и информации на предмет возможных
-                      последствий</li>
-                    <li>подготовку апелляционной жалобы на Решения ИФНС в вышестоящие налоговые органы</li>
-                    <li>подготовку исковых заявлений, апелляционных и кассационных жалоб в суды, а также представление
-                      интересов наших клиентов в судах</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-
-          </div>
-        </section>
-
-        <section class="contacts" id="contacts">
-          <div class="container">
-            <h2 class="contacts__title">Мы находимся здесь</h2>
-            <div class="contacts__content">
-              <div class="contacts__map" id="map">
-                <iframe
-                  src="https://yandex.ru/map-widget/v1/?um=constructor%3A1961c856645e839ad1cd508ff4d6f61b1aa9cc89150fce70d5b238716075de83&amp;source=constructor"
-                  width="100%" height="500" loading="lazy" frameborder="0"
-                  title="Офис компании по адресу улица Большая Казачья, дом 23/28, Саратов">
-                </iframe>
-              </div>
-              <div class="contacts__info">
-                <h3 class="contacts__title contacts__title--medium">Общество с&nbsp;ограниченной ответственностью
-                  &laquo;Региональный
-                  учетно-консалтинговый центр&raquo;<br>(ООО &laquo;РУКЦ&raquo;)</h3>
-                <ul class="contacts__list list-reset">
-                  <li class="contacts__item">
-                    <svg width="22" height="22">
-                      <use xlink:href="img/sprite.svg#icon-pin"></use>
-                    </svg>
-                    <address class="contacts__address">
-                      410012, г. Саратов, ул.&nbsp;Большая&nbsp;Казачья, 23/27
-                    </address>
+          <section class="services" id="services">
+            <div class="container">
+              <h2 class="services__title">Чем мы можем помочь Вашему бизнесу</h2>
+              <div class="tabs"> <!-- поменять название? -->
+                <ul class="accordion list-reset" data-accordion="parent" data-single="data-single">
+                  <li class="accordion__element is-active services__item" data-accordion="element">
+                    <h3>
+                      <button class="accordion__button is-active" type="button" data-accordion="button">
+                        Ведение бухгалтерского учета
+                      </button>
+                    </h3>
+                    <div class="accordion__content" data-accordion="content">
+                      <div class="accordion__wrapper">
+                        <p>
+                          Подобрать квалифицированного главного бухгалтера&nbsp;&mdash; очень непростая задача для
+                          руководителя. Однако осознание этого факта, зачастую, приходит слишком поздно, при наличии
+                          реальных потерь, например
+                          в результате существенных доначислений налогов с&nbsp;пенями и&nbsp;штрафами,
+                          в&nbsp;результате
+                          обоснованных претензий со стороны налоговых органов.
+                        </p>
+                        <p>
+                          Но&nbsp;даже наличие в&nbsp;штате квалифицированной бухгалтерии не&nbsp;избавляет
+                          руководителей,
+                          собственников
+                          предприятий от&nbsp;головной боли, так как бухгалтер имеет право на&nbsp;очередной
+                          оплачиваемый
+                          отпуск,
+                          может
+                          заболеть или уйти в&nbsp;декрет. В&nbsp;случае долговременного вынужденного отсутствия
+                          сотрудника
+                          бухгалтерии, ему
+                          необходимо искать замену, а&nbsp;в&nbsp;случае краткосрочного отсутствия нужно быть просто
+                          готовым
+                          к&nbsp;возможным
+                          потерям, принимая это как данность.
+                        </p>
+                        <p>
+                          Именно поэтому в&nbsp;развитых странах мира функции ведения бухгалтерского учета передают
+                          сторонним
+                          юридическим лицам. В&nbsp;России бухгалтерский аутсорсинг заслуженно стремительно набирает
+                          популярность.
+                          Мы&nbsp;оказываем услуги по&nbsp;качественному ведению бухгалтерского учета как всех, так
+                          и&nbsp;отдельных его участков. По&nbsp;всем правилам и&nbsp;стандартам, своевременно
+                          подготовим
+                          бухгалтерскую
+                          и&nbsp;налоговую отчетность, возложив на
+                          себя все риски и&nbsp;ответственность за&nbsp;ее&nbsp;подготовку и&nbsp;представление.
+                        </p>
+                      </div>
+                    </div>
                   </li>
-                  <li class="contacts__item">
-                    <svg width="22" height="22">
-                      <use xlink:href="img/sprite.svg#icon-phone"></use>
-                    </svg>
-                    <a class="contacts__phone" href="tel:+78452980316">
-                      +7 (8452) 98-03-16</a>
-                    </a>
+                  <li class="accordion__element services__item" data-accordion="element">
+                    <h3>
+                      <button class="accordion__button" type="button" data-accordion="button">Оценка
+                        имущества
+                      </button>
+                    </h3>
+                    <div class="accordion__content" data-accordion="content">
+                      <div class="accordion__wrapper">
+                        <p>Независимую оценку привлекают в&nbsp;случаях, когда необходимо получить достоверную
+                          информацию
+                          о&nbsp;стоимости имущества на&nbsp;открытом конкурентном рынке. Отчет оценщика может
+                          понадобится
+                          для
+                          эффективного разрешения различных имущественных споров, например,
+                          при разделе общей собственности при бракоразводных процессах, неоднозначности вопросов
+                          по&nbsp;ипотеке,
+                          для определения суммы ущерба или компенсации при изъятии имущества в&nbsp;государственных
+                          интересах.
+                          Также оценка зачастую необходима при купле-продаже имущества, предоставления в&nbsp;качестве
+                          залогового
+                          обязательства при получении кредита, при внесении имущества в&nbsp;уставный капитал
+                          хозяйствующего
+                          субъекта и во&nbsp;многих других ситуациях.</p>
+                        <p>
+                          Оценка имущества или имущественных комплексов является одним из&nbsp;приоритеных направлений
+                          деятельности нашей компании. Наши специалисты имеют огромный опыт и&nbsp;знания в
+                          сфере оценочной деятельности, что дает нам возможность своевременно и&nbsp;качественно решать
+                          даже
+                          самые
+                          сложные задачи, связанные с&nbsp;оценкой. Мы&nbsp;работаем с&nbsp;различными
+                          клиентами&nbsp;&mdash;
+                          от&nbsp;крупных государственных организаций до&nbsp;небольших коммерческих компаний
+                          и&nbsp;физических
+                          лиц. Нас отличает стремление предложить оптимальное решение для любой поставленной задачи.
+                        </p>
+                      </div>
+                    </div>
                   </li>
-                  <li class="contacts__item">
-                    <svg width="22" height="22">
-                      <use xlink:href="img/sprite.svg#icon-email"></use>
-                    </svg>
-                    <a class="contacts__email" href="mailto:uchet-saratov@yandex.ru">
-                      uchet-saratov@yandex.ru
-                    </a>
+                  <li class="accordion__element services__item" data-accordion="element">
+                    <h3>
+                      <button class="accordion__button" type="button" data-accordion="button">Восстановление
+                        бухгалтерского учета
+                      </button>
+                    </h3>
+                    <div class="accordion__content" data-accordion="content">
+                      <div class="accordion__wrapper">
+                        <p>Восстановить бухгалтерский учет может понадобиться в&nbsp;случаях, например, некомпетентности
+                          главного
+                          бухгалтера, отсутствия регистров бухгалтерского учета на&nbsp;протяжении нескольких периодов,
+                          недостоверности
+                          первичных данных, неправильного ведения налогового и&nbsp;бухгалтерского учета, утраты
+                          отчетности,
+                          первичных
+                          данных и&nbsp;бухгалтерских регистров.</p>
+                        <p>Зачастую, собственными силами организации с&nbsp;непростой задачей восстановления
+                          бухгалтерского
+                          и
+                          налогового учета не&nbsp;справиться. Самый оптимальный выход&nbsp;&mdash; обратиться
+                          к&nbsp;профессионалам, которые имеют
+                          огромный опыт в&nbsp;данном виде деятельности. Наши специалисты готовы в&nbsp;кратчайшие сроки
+                          оказать
+                          квалифицированную помощь в&nbsp;решении данной задачи.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="accordion__element services__item" data-accordion="element">
+                    <h3>
+                      <button class="accordion__button" type="button" data-accordion="button">Бухгалтерское и
+                        налоговое консультирование
+                      </button>
+                    </h3>
+                    <div class="accordion__content" data-accordion="content">
+                      <div class="accordion__wrapper">
+                        <p>В&nbsp;связи с&nbsp;дефицитом времени и&nbsp;финансовых ресурсов у&nbsp;руководителей
+                          компаний
+                          не&nbsp;всегда находится
+                          возможность организовать своему работнику качественное обучение, которое необходимо для
+                          адаптации
+                          его
+                          академических знаний к&nbsp;определённой области бизнеса. А&nbsp;для качественной работы это
+                          необходимо.
+                          Особенно
+                          не&nbsp;терпит неточностей финансовая сфера.
+                        </p>
+                        <p>Наши консультации&nbsp;&mdash; это прежде всего помощь в&nbsp;сборе, фиксации
+                          и&nbsp;систематизации
+                          необходимой информации;
+                          ознакомление клиента с&nbsp;наиболее эффективными методами анализа сложившейся финансовой
+                          ситуации;
+                          передача
+                          необходимых полезных знаний.</p>
+                        <p>Консультации осуществляются как на&nbsp;разовой основе, так и&nbsp;на&nbsp;основании договора
+                          на&nbsp;абонентское
+                          консультационное обслуживание. При этом у&nbsp;клиента имеется возможность оперативно
+                          получать,
+                          без
+                          ограничения количества запросов, устные или письменные консультации. Мы&nbsp;проводим
+                          консультации
+                          любым удобным для наших клиентов способом. В&nbsp;настоящее время заслуженной популярностью
+                          пользуются
+                          консультационные услуги онлайн, что позволяет нашим клиентам получать своевременные
+                          и&nbsp;полные
+                          ответы
+                          на&nbsp;интересующие вопросы.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="accordion__element services__item" data-accordion="element">
+                    <h3>
+                      <button class="accordion__button" type="button" data-accordion="button">Сопровождение
+                        налоговых проверок
+                      </button>
+                    </h3>
+                    <div class="accordion__content" data-accordion="content">
+                      <div class="accordion__wrapper">
+                        <p>
+                          Во&nbsp;взаимоотношениях с&nbsp;налоговыми органами требуется занимать четкую
+                          и&nbsp;взвешенную
+                          позицию,
+                          основанную на
+                          неопровержимых доказательствах. Многолетний опыт наших сотрудников гарантирует положительный
+                          результат
+                          при защите интересов наших клиентов на&nbsp;всех стадиях обжалования актов и&nbsp;решений
+                          налоговых
+                          органов.
+                        </p>
+                        <p>Сопровождение налоговых проверок включает в себя:</p>
+                        <ul class="list-reset">
+                          <li>сопровождение в ходе налоговой проверки: определение правомерности запросов и требований
+                            налогового
+                            органа, подготовка ответов и оценка предоставляемых документов и информации на предмет
+                            возможных
+                            последствий</li>
+                          <li>подготовку апелляционной жалобы на Решения ИФНС в вышестоящие налоговые органы</li>
+                          <li>подготовку исковых заявлений, апелляционных и кассационных жалоб в суды, а также
+                            представление
+                            интересов наших клиентов в судах</li>
+                        </ul>
+                      </div>
+                    </div>
                   </li>
                 </ul>
-                <div class="contacts__details">
-                  <h4 class="contacts__title contacts__title--small">Руководитель компании</h4>
-                  <i class="contacts__item">Директор Бокова Елена Сергеевна</i>
-                </div>
-
-                <details class="contacts__details">
-                  <summary class="contacts__title contacts__title--small">
-                    Реквизиты
-                  </summary>
-                  <dl class="contacts__details-list">
-                    <div>
-                      <dt>ИНН/КПП</dt>
-                      <dd>6453128722/645501001</dd>
-                    </div>
-                    <div>
-                      <dt>ОГРН</dt>
-                      <dd>11364530002685</dd>
-                    </div>
-                  </dl>
-                  <dl class="contacts__details-list">
-                    <div>
-                      <dt>Расчетный счет</dt>
-                      <dd>40702810156000006678</dd>
-                    </div>
-                    <div>
-                      <dt>Банк</dt>
-                      <dd>САРАТОВСКОЕ ОТДЕЛЕНИЕ N8622 ПАО СБЕРБАНК</dd>
-                    </div>
-                    <div>
-                      <dt>К/с</dt>
-                      <dd>30101810500000000649</dd>
-                    </div>
-                    <div>
-                      <dt>БИК</dt>
-                      <dd>046311649</dd>
-                    </div>
-                  </dl>
-                </details>
               </div>
             </div>
+          </section>
+
+          <section class="contacts" id="contacts">
+            <div class="container">
+              <h2 class="contacts__title">Мы находимся здесь</h2>
+              <div class="contacts__content">
+                <div class="contacts__map" id="map">
+                  <iframe
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A1961c856645e839ad1cd508ff4d6f61b1aa9cc89150fce70d5b238716075de83&amp;source=constructor"
+                    width="100%" height="500" loading="lazy" frameborder="0"
+                    title="Офис компании по адресу улица Большая Казачья, дом 23/28, Саратов">
+                  </iframe>
+                </div>
+                <div class="contacts__info">
+                  <h3 class="contacts__title-medium">Общество с&nbsp;ограниченной ответственностью
+                    &laquo;Региональный
+                    учетно-консалтинговый центр&raquo;<br>(ООО &laquo;РУКЦ&raquo;)</h3>
+                  <ul class="contacts__list list-reset">
+                    <li class="contacts__item">
+                      <svg width="22" height="22">
+                        <use xlink:href="img/sprite.svg#icon-pin"></use>
+                      </svg>
+                      <address class="contacts__address">
+                        410012, г. Саратов, ул.&nbsp;Большая&nbsp;Казачья, 23/27
+                      </address>
+                    </li>
+                    <li class="contacts__item">
+                      <svg width="22" height="22">
+                        <use xlink:href="img/sprite.svg#icon-phone"></use>
+                      </svg>
+                      <a class="contacts__phone" href="tel:+78452980316">
+                        +7 (8452) 98-03-16
+                      </a>
+                    </li>
+                    <li class="contacts__item">
+                      <svg width="22" height="22">
+                        <use xlink:href="img/sprite.svg#icon-email"></use>
+                      </svg>
+                      <a class="contacts__email" href="mailto:uchet-saratov@yandex.ru">
+                        uchet-saratov@yandex.ru
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="contacts__details">
+                    <h4 class="contacts__title-small">Руководитель компании</h4>
+                    <i class="contacts__item">Директор Бокова Елена Сергеевна</i>
+                  </div>
+
+                  <details class="contacts__details">
+                    <summary class="contacts__title-small">
+                      Реквизиты
+                    </summary>
+                    <dl class="contacts__details-list">
+                      <div>
+                        <dt>ИНН/КПП</dt>
+                        <dd>6453128722/645501001</dd>
+                      </div>
+                      <div>
+                        <dt>ОГРН</dt>
+                        <dd>11364530002685</dd>
+                      </div>
+                    </dl>
+                    <dl class="contacts__details-list">
+                      <div>
+                        <dt>Расчетный счет</dt>
+                        <dd>40702810156000006678</dd>
+                      </div>
+                      <div>
+                        <dt>Банк</dt>
+                        <dd>САРАТОВСКОЕ ОТДЕЛЕНИЕ N8622 ПАО СБЕРБАНК</dd>
+                      </div>
+                      <div>
+                        <dt>К/с</dt>
+                        <dd>30101810500000000649</dd>
+                      </div>
+                      <div>
+                        <dt>БИК</dt>
+                        <dd>046311649</dd>
+                      </div>
+                    </dl>
+                  </details>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer class="footer">
+          <div class="footer__container container">
+            <a class="footer__logo" href="#">
+              <img class="logo" src="img/logo-white.svg" width="100" height="auto" alt="Компания РУКЦ.">
+            </a>
           </div>
-        </section>
-      </main>
-      <footer class="footer">
-        <div class="footer__container container">
-          <a class="footer__logo" href="#">
-            <img class="logo" src="img/logo-white.svg" width="100" height="auto" alt="Компания РУКЦ.">
-          </a>
-        </div>
-      </footer>
+        </footer>
+      </div>
     </div>
   </div>
+
+  <button class="button-up is-hidden" type="button" id="button-up" aria-label="Перейти наверх сайта">
+    <svg width="34" height="34">
+      <use xlink:href="img/sprite.svg#arrow-up"></use>
+    </svg>
+  </button>
 
   <div class="modal modal--preload" data-modal="feedback">
     <div class="modal__wrapper">

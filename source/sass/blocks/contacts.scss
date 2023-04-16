@@ -1,12 +1,21 @@
 .contacts {
   padding: 8vh 0;
-  background-color: $color-background-pink;
 }
 
 .contacts__content {
   display: grid;
   grid-template-columns: 50% 1fr;
-  gap: 25px
+  gap: 25px;
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.contacts__map {
+  @include vp-767 {
+    margin-bottom: 30px;
+  }
 }
 
 .contacts__title {
@@ -22,24 +31,58 @@
     font-size: 3.5vw;
   }
 
-  &--medium {
-    margin-bottom: 10px;
-    font-size: 20px;
-
-    @include vp-1279 {
-      font-size: 1.6vw;
-    }
+  @include vp-767 {
+    margin-bottom: 2vh;
+    font-size: 4.5vw;
   }
 
-  &--small {
-    margin-bottom: 5px;
-    font-size: 18px;
-    line-height: 1.8em;
-    font-weight: 700;
+  @include vp-374 {
+    font-size: 22px;
+  }
+}
 
-    @include vp-1279 {
-      font-size: 1.5vw;
-    }
+.contacts__title-medium {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: $ff-main;
+  font-size: 20px;
+  font-weight: 800;
+  color: $color-basic-dark;
+  line-height: 1em;
+
+  @include vp-1279 {
+    font-size: 1.6vw;
+  }
+
+  @include vp-767 {
+    font-size: 3.5vw;
+    text-align: center;
+  }
+
+  @include vp-374 {
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+.contacts__title-small {
+  margin: 0;
+  margin-bottom: 5px;
+  font-family: $ff-main;
+  font-size: 18px;
+  line-height: 1.8em;
+  font-weight: 700;
+
+  @include vp-1279 {
+    font-size: 1.5vw;
+  }
+
+  @include vp-767 {
+    font-size: 3vw;
+  }
+
+  @include vp-374 {
+    font-size: 14px;
   }
 }
 
@@ -59,8 +102,25 @@
     font-size: 1.5vw;
   }
 
+  @include vp-767 {
+    font-size: 2.5vw;
+  }
+
+  @include vp-374 {
+    font-size: 12px;
+    line-height: 1.2em;
+  }
+
   svg {
     margin-right: 10px;
+
+    @include vp-767 {
+      transform: scale(0.8);
+    }
+
+    @include vp-374 {
+            align-self: flex-start;
+    }
   }
 }
 
@@ -87,6 +147,14 @@ summary {
   @include vp-1279 {
     font-size: 1.4vw;
     color: $color-basic-dark;
+  }
+
+  @include vp-767 {
+    font-size: 2.5vw;
+  }
+
+  @include vp-374 {
+    font-size: 12px;
   }
 
   div {

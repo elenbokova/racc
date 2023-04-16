@@ -20,6 +20,7 @@ html {
   color: $color-basic-black;
   scroll-behavior: smooth;
 
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   // оптимизация выравнивания шрифта относительно центра строки
@@ -39,6 +40,10 @@ body {
 a {
   color: $color-basic-black;
   text-decoration: none;
+
+  &.focus-visible:focus {
+    outline: 2px solid $color-accent-dark-yellow;
+  }
 }
 
 img,

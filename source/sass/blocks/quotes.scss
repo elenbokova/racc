@@ -8,6 +8,11 @@
   position: absolute;
   left: 0;
   top: -20px;
+
+  @include vp-767 {
+    width: 20vw;
+    height: 20vw;
+  }
 }
 
 blockquote {
@@ -29,12 +34,30 @@ blockquote {
     font-size: 1.9vw;
     line-height: 1em;
   }
+
+  @include vp-767 {
+    margin-left: 18vw;
+    font-size: 14px;
+  }
+
+  @include vp-374 {
+    font-size: 11px;
+  }
 }
 
 .quotes__item-author {
   text-align: end;
+
   @include vp-1279 {
     font-size: 1.4vw;
     line-height: 1em;
+  }
+
+    @include vp-767 {
+    font-size: 12px;
+  }
+
+  @include vp-374 {
+    font-size: 10px;
   }
 }
