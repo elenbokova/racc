@@ -39,6 +39,15 @@ export class Accordions {
       return;
     }
     this._windowWidth = window.innerWidth;
+
+    const parent = document.querySelector('[data-accordion="parent"]');
+    const elements = parent.querySelectorAll('[data-accordion="element"]');
+    elements.forEach((element) => {
+      element.classList.remove('is-active');
+    });
+    if (parent.dataset.close && window.matchMedia(parent.dataset.close).matches) {
+      elements[0].classList.add('is-active');
+    }
     this.updateAccordionsHeight();
   }
 
